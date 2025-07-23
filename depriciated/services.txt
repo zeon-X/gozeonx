@@ -1,0 +1,94 @@
+    <!-- Services -->
+    <section id="services" class="bg-gray-50 py-16 px-6 md:px-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">What I Offer</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service Card -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Full Stack"
+                    class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-2">Full Stack Development</h3>
+                <p class="text-gray-600 text-sm text-center mb-4">
+                    End-to-end development including frontend, backend, dashboard, and ML integration — all under one
+                    roof.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Hire for Full Stack
+                </a>
+            </div>
+
+            <!-- Agency -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="Agency"
+                    class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-2">Agency-Based Delivery</h3>
+                <p class="text-gray-600 text-sm text-center mb-4">
+                    Work with my freelancer team for fast, reliable, and scalable project delivery across all platforms.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Work With Agency
+                </a>
+            </div>
+
+            <!-- Web & Backend -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/3095/3095583.png" alt="Web" class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-2">Web & Backend Solutions</h3>
+                <p class="text-gray-600 text-sm text-center mb-4">
+                    Modern websites, dashboards, APIs, and secure backends — built with React, Node.js, Django, and
+                    more.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Hire for Web
+                </a>
+            </div>
+
+            <!-- Mobile -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/3649/3649460.png" alt="App" class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-2">Mobile App Development</h3>
+                <p class="text-gray-600 text-sm text-center mb-4">
+                    Cross-platform apps (React Native) and Android-native apps (Kotlin) — smooth, optimized, and
+                    user-centric.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Hire for App Dev
+                </a>
+            </div>
+
+            <!-- DevOps -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/843/843316.png" alt="DevOps" class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-2">Deployment & Support</h3>
+                <p class="text-gray-600 text-sm text-center mb-4">
+                    CI/CD, cloud setup, bug fixing, optimization, and ongoing maintenance to keep everything running
+                    smoothly.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Hire for DevOps
+                </a>
+            </div>
+
+            <!-- Graphics & Branding -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Graphics"
+                    class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-2">Graphics & Brand Identity</h3>
+                <p class="text-gray-600 text-sm text-center mb-4">
+                    UI/UX design, logos, social kits, and brand identity systems to make your business stand out
+                    visually.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Request for Design
+                </a>
+            </div>
+
+        </div>
+    </section>

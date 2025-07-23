@@ -1,0 +1,33 @@
+    <!-- About -->
+    <section id="about" class="relative py-20 px-6 md:px-20 bg-white overflow-hidden">
+        <h2 class="text-3xl font-bold text-center text-indigo-800 mb-12">About Me</h2>
+
+        <div class="max-w-6xl mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+
+            <!-- Image with blob background -->
+            <div class="relative flex justify-center">
+                <div
+                    class="absolute -top-10 -left-10 w-64 h-64 bg-gradient-to-br from-purple-100 to-indigo-100 rounded-full filter blur-2xl opacity-50 z-0">
+                </div>
+                <img src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
+                    class="relative z-10 rounded-2xl shadow-xl w-full max-w-sm object-cover">
+            </div>
+
+            <!-- Text Card -->
+            <div
+                class="bg-gray-50 border border-indigo-100 rounded-2xl shadow-md p-8 transition duration-300 hover:shadow-lg">
+                <p class="text-gray-700 text-base leading-relaxed">
+                    I'm a full-stack software engineer with 2.5+ years of experience building web and mobile solutions
+                    that scale.
+                    From sleek frontend interfaces to robust backend APIs, I specialize in turning product ideas into
+                    real-world platforms.
+                </p>
+                <p class="text-gray-700 text-base leading-relaxed mt-4">
+                    My expertise includes React, Next.js, Node.js, React Native, Firebase, PostgreSQL, and cloud
+                    deployment (AWS & Vercel).
+                    I’m passionate about great UX, modular code, and collaborative development with fast-moving teams.
+                </p>
+            </div>
+
+        </div>
+    </section>

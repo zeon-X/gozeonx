@@ -4,8 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gozeonx | Md. Shefat Zeon</title>
+    <title>gozeonx | Software. Solutions. Scale.</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    aspectRatio: {
+                        '16/9': '16 / 9'
+                    }
+                }
+            }
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
         body {
@@ -17,22 +28,41 @@
 <body class="bg-white text-gray-900">
 
     <!-- Navbar -->
-    <header class="flex justify-between items-center px-6 py-4 shadow-md sticky top-0 bg-white z-50">
-        <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
-        <nav class="space-x-4 text-sm">
-            <a href="#about" class="hover:text-indigo-600">About</a>
-            <a href="#skills" class="hover:text-indigo-600">Skills</a>
-            <a href="#experience" class="hover:text-indigo-600">Experience</a>
-            <a href="#projects" class="hover:text-indigo-600">Projects</a>
-            <a href="#research" class="hover:text-indigo-600">Research</a>
-            <a href="#education" class="hover:text-indigo-600">Education</a>
-            <a href="#certificates" class="hover:text-indigo-600">Certificates</a>
-            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    <header class="sticky top-0 bg-white z-50 shadow-md">
+        <div class="flex justify-between items-center px-6 py-4">
+            <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
+
+            <!-- Hamburger Button -->
+            <button id="navToggle" class="md:hidden text-indigo-600 text-2xl focus:outline-none">
+                ☰
+            </button>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-4 text-sm" id="navMenu">
+                <a href="#about" class="hover:text-indigo-600">About</a>
+                <a href="#services" class="hover:text-indigo-600">Services</a>
+                <a href="#skills" class="hover:text-indigo-600">Skills</a>
+                <a href="#experience" class="hover:text-indigo-600">Experience</a>
+                <a href="#projects" class="hover:text-indigo-600">Projects</a>
+                <a href="#contact" class="hover:text-indigo-600">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <nav id="mobileMenu"
+            class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6 text-sm space-y-3">
+            <a href="#about" class="block pt-3 hover:text-indigo-600">About</a>
+            <a href="#services" class="block hover:text-indigo-600">Services</a>
+            <a href="#skills" class="block hover:text-indigo-600">Skills</a>
+            <a href="#experience" class="block hover:text-indigo-600">Experience</a>
+            <a href="#projects" class="block hover:text-indigo-600">Projects</a>
+            <a href="#contact" class="block pb-4 hover:text-indigo-600">Contact</a>
         </nav>
     </header>
 
+
     <!-- Hero Section -->
-    <section
+    <section id="home"
         class="text-center min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-indigo-100 to-purple-100">
         <h2 class="text-5xl font-bold mb-4">Md. Shefat Zeon</h2>
         <p class="text-xl text-gray-700 mb-6">Software Engineer | Full Stack Developer | MERN Expert</p>
@@ -41,111 +71,471 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="py-16 px-6 md:px-20">
-        <h2 class="text-2xl font-bold mb-4 text-center">About Me</h2>
-        <p class="text-gray-700 max-w-3xl mx-auto text-center">
-            A Software Engineer with 2.5+ years of experience in full-stack development for startups, specializing in
-            the MERN stack and mobile apps. Strong foundation in building scalable SaaS platforms, deployment pipelines,
-            and UI/UX driven design.
-        </p>
-    </section>
+    <section id="about" class="py-20 px-6 md:px-20 bg-white">
+        <h2 class="text-3xl font-bold mb-12 text-center text-indigo-800">About Me</h2>
 
-    <!-- Skills -->
-    <section id="skills" class="bg-gray-50 py-16 px-6 md:px-20">
-        <h2 class="text-2xl font-bold mb-6 text-center">Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
-            <span>JavaScript, Python, C, C++, Java, Kotlin</span>
-            <span>React, Next.js, Redux, React Native</span>
-            <span>Node.js, Express.js, Django, PHP</span>
-            <span>MongoDB, PostgreSQL, MySQL</span>
-            <span>AWS, Firebase, GCP</span>
-            <span>CI/CD, Git, REST API</span>
-            <span>Tailwind CSS, HTML, CSS</span>
-            <span>Agile, Scrum, DevOps</span>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+
+            <!-- Image -->
+            <div class="flex justify-center">
+                <!-- <img src="https://i.ibb.co/nMCwsr3x/IMG-4741.png" alt="Md. Shefat Zeon"
+                    class="rounded-2xl shadow-md w-full max-h-[420px] grayscale object-cover object-top"> -->
+                <img src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
+                    class="rounded-2xl shadow-md w-full max-h-[480px] grayscale object-cover object-center">
+                <!-- <img src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
+                    class="rounded-2xl shadow-md w-full max-w-sm max-h-[420px] grayscale object-cover"> -->
+            </div>
+
+            <!-- Text -->
+            <div>
+                <p class="text-gray-700 text-sm text-base leading-relaxed">
+                    I'm a Software Engineer with 2.5+ years of hands-on experience across web, mobile, and backend
+                    development. My work spans building scalable products for over 7 fast-paced startups and digital
+                    platforms across sectors like e-commerce, SaaS, music tech, and education.
+                </p>
+                <p class="text-gray-700 text-sm text-base leading-relaxed mt-4">
+                    With a strong foundation in the MERN stack and React Native, I also work with Python, Kotlin,
+                    PostgreSQL, and cloud platforms like AWS and Firebase. I co-founded <strong>AleehaTech</strong>, a
+                    full-cycle software agency, where I lead product development and team delivery for global clients.
+                </p>
+                <p class="text-gray-700 text-sm text-base leading-relaxed mt-4">
+                    Beyond code, I enjoy solving real-world problems through creative systems thinking and product
+                    design. From MVPs to production-ready systems, my focus is on clean UI/UX, performance, DevOps
+                    pipelines, and delivering lasting value through technology. I believe in fast iterations, clear
+                    ownership, and shipping solutions that matter.
+                </p>
+            </div>
+
+
         </div>
     </section>
 
+
+
+
+
+
+    <!-- Services -->
+    <section id="services" class="bg-gray-50 py-16 px-6 md:px-20">
+        <h2 class="text-3xl font-bold mb-12 text-center">What I Offer</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Full Stack Development -->
+            <div class="bg-white rounded-xl shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Full Stack"
+                    class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-1">Full Stack Development</h3>
+                <p class="text-sm text-indigo-500 text-center mb-4">(individual/with team)</p>
+                <p class="text-gray-600 text-sm text-center mb-6 leading-relaxed">
+                    We offer complete software solutions — from web apps, mobile apps, and backend APIs to admin
+                    dashboards,
+                    machine learning integration, and database design. Our team handles planning, development,
+                    deployment, and scaling
+                    to ensure your digital product is performant, secure, and production-ready.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Get Started
+                </a>
+            </div>
+
+            <!-- Brand Identity & Design -->
+            <div class="bg-white rounded-xl shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
+                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Brand"
+                    class="h-12 mx-auto mb-4">
+                <h3 class="text-lg font-semibold text-center mb-1">Brand Identity & Design</h3>
+                <p class="text-sm text-indigo-500 text-center mb-4">(with team)</p>
+                <p class="text-gray-600 text-sm text-center mb-6 leading-relaxed">
+                    From logos and color systems to UI/UX design and social content — we craft cohesive visual
+                    identities
+                    that align with your brand's values. Whether you're building a startup or refreshing an existing
+                    image,
+                    our creative team ensures everything looks and feels just right across all platforms.
+                </p>
+                <a href="#contact"
+                    class="self-center inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm px-5 py-2 rounded-full border border-transparent hover:bg-none hover:text-indigo-600 hover:border-indigo-600 transition duration-300">
+                    Get Started
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Skills -->
+    <section id="skills" class="bg-white py-16 px-6 md:px-20">
+        <h2 class="text-3xl font-bold mb-10 text-center text-indigo-800">Skills</h2>
+
+        <div class="flex flex-wrap justify-center gap-6">
+
+            <!-- JavaScript -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">JavaScript</span>
+            </div>
+
+            <!-- Python -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Python</span>
+            </div>
+
+            <!-- C -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">C/C++</span>
+            </div>
+
+
+            <!-- Java -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Java</span>
+            </div>
+
+
+
+            <!-- React -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">React / React Native</span>
+            </div>
+
+            <!-- Next.js -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Next.js" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Next.js</span>
+            </div>
+
+            <!-- Redux -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="Redux" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Redux Toolkit</span>
+            </div>
+
+            <!-- Node.js -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Node.js</span>
+            </div>
+            <!-- Express.js -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt="Express.js" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Express.js</span>
+            </div>
+
+
+            <!-- Django -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"
+                    class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Django</span>
+            </div>
+
+
+            <!-- MongoDB -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+                    class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">MongoDB</span>
+            </div>
+
+
+            <!-- PostgreSQL -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">PostgreSQL</span>
+            </div>
+
+            <!-- Firebase -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"
+                    class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Firebase</span>
+            </div>
+
+            <!-- AWS -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="AWS" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">AWS</span>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind"
+                    class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Tailwind CSS</span>
+            </div>
+            <!-- Figma -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
+                    class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Figma</span>
+            </div>
+
+
+            <!-- Git -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Git</span>
+            </div>
+
+            <!-- Agile -->
+            <div class="flex flex-col items-center w-28">
+                <img src="https://cdn-icons-png.flaticon.com/512/4222/4222781.png" alt="Agile" class="h-14 mb-2">
+                <span class="text-sm font-medium text-center">Agile / Scrum</span>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
     <!-- Experience -->
-    <section id="experience" class="py-16 px-6 md:px-20">
-        <h2 class="text-2xl font-bold mb-6 text-center">Experience</h2>
-        <div class="space-y-8">
-            <div>
-                <h3 class="text-lg font-semibold">Software Engineer - Betafore (Hybrid)</h3>
-                <p class="text-sm text-gray-600">Jul 2025 – Present</p>
-                <p class="text-gray-700 mt-2">
-                    Designed and developed a multi-role requisition platform for communication and order management
-                    between store staff, managers, company admins, and vendors under a SaaS model. Used React Native
-                    (bare Expo), Redux Toolkit, RTK Query, Node.js, Prisma, and PostgreSQL.
-                </p>
+    <section id="experience" class="bg-gray-50 py-16 px-6 md:px-20">
+        <h2 class="text-3xl font-bold mb-12 text-center text-indigo-800">Experience</h2>
+
+        <div class="relative border-l-2 border-indigo-200 ml-4 md:ml-6 space-y-10">
+
+            <!-- Experience Item -->
+            <div class="relative pl-6 md:pl-10">
+                <div
+                    class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-lg font-semibold text-indigo-700">Software Engineer – <span
+                            class="text-gray-800">Betafore</span> <span
+                            class="text-xs bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full ml-2">Hybrid</span>
+                    </h3>
+                    <p class="text-sm text-gray-500 mt-1">Jul 2025 – Present</p>
+                    <p class="text-sm text-gray-700 mt-3">
+                        Built a multi-role requisition platform for store teams, vendors, and admins. Used React Native
+                        (bare Expo), Redux Toolkit, Node.js, Prisma, and PostgreSQL in a scalable SaaS model.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h3 class="text-lg font-semibold">Full Stack Developer - Upvibez (Remote)</h3>
-                <p class="text-sm text-gray-600">Jun 2024 – Apr 2025</p>
-                <p class="text-gray-700 mt-2">
-                    Built a cross-platform music streaming platform with AI-based music suggestion and interactive
-                    playlists. Developed with React Native, Node.js, and Python. Deployed and scaled via AWS.
-                </p>
+
+            <!-- Experience Item -->
+            <div class="relative pl-6 md:pl-10">
+                <div
+                    class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-lg font-semibold text-indigo-700">Full Stack Developer – <span
+                            class="text-gray-800">Upvibez</span> <span
+                            class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full ml-2">Remote</span>
+                    </h3>
+                    <p class="text-sm text-gray-500 mt-1">Jun 2024 – Apr 2025</p>
+                    <p class="text-sm text-gray-700 mt-3">
+                        Developed a music streaming app with AI recommendations and interactive playlists. Used React
+                        Native, Node.js, Python. Deployed on AWS.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h3 class="text-lg font-semibold">Full Stack Developer - 99Moves (Remote)</h3>
-                <p class="text-sm text-gray-600">Jan 2024 – Jun 2024</p>
-                <p class="text-gray-700 mt-2">
-                    Built a youth sports education app and admin portal with features like school finder, admission
-                    flow, calendar, notifications. Used Expo React Native, Node.js, Google Maps API, Firebase, AWS.
-                </p>
+
+            <!-- Experience Item -->
+            <div class="relative pl-6 md:pl-10">
+                <div
+                    class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-lg font-semibold text-indigo-700">Full Stack Developer – <span
+                            class="text-gray-800">99Moves</span> <span
+                            class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full ml-2">Remote</span>
+                    </h3>
+                    <p class="text-sm text-gray-500 mt-1">Jan 2024 – Jun 2024</p>
+                    <p class="text-sm text-gray-700 mt-3">
+                        Delivered a youth sports app and admin panel. Implemented school finder, admissions, and
+                        calendar features using Expo, Firebase, Maps API.
+                    </p>
+                </div>
             </div>
+
         </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-gray-50 py-16 px-6 md:px-20">
-        <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
+    <section id="projects" class="py-16 px-6 md:px-20 ">
+        <h2 class="text-2xl font-bold mb-10 text-center">Projects</h2>
+
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">UpVibez DJ Platform</h4>
-                <p class="text-sm text-gray-600">React · Node.js · MongoDB</p>
+
+            <!-- UpVibez -->
+            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="UpVibez"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">UpVibez DJ Platform</h4>
+                    <p class="text-sm text-gray-600 mb-3">React · Node.js · MongoDB</p>
+                    <a href="https://upvibez.com" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        Visit Project
+                    </a>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">99Moves Pro</h4>
-                <p class="text-sm text-gray-600">React Native · Firebase · Maps API</p>
+
+            <!-- 99Moves -->
+            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="99Moves"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">99Moves Pro</h4>
+                    <p class="text-sm text-gray-600 mb-3">React Native · Firebase · Maps API</p>
+                    <a href="https://apps.apple.com/us/app/99moves-pro/id6673897239?uo=4" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        Visit Project
+                    </a>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">Marmara Gold LLC Website</h4>
-                <p class="text-sm text-gray-600">React · Tailwind CSS · AWS Amplify</p>
+
+            <!-- Marmara -->
+            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Marmara"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">Marmara Gold LLC Website</h4>
+                    <p class="text-sm text-gray-600 mb-3">React · Tailwind CSS · AWS Amplify</p>
+                    <a href="https://main.d2x41oijgwyhxl.amplifyapp.com/" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        Visit Project
+                    </a>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">WristLink Marketplace</h4>
-                <p class="text-sm text-gray-600">React · SaaS · Subscription</p>
+
+            <!-- WristLink -->
+            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="WristLink"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">WristLink Marketplace</h4>
+                    <p class="text-sm text-gray-600 mb-3">React · SaaS · Subscription</p>
+                    <a href="https://main.d2qfb7a0oc8xva.amplifyapp.com/" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        Visit Project
+                    </a>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">Zawaj Matrimony App</h4>
-                <p class="text-sm text-gray-600">React Native · Firebase</p>
+
+            <!-- Zawaj -->
+            <div class="bg-white rounded-xl shadow overflow-hidden">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Zawaj"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h4 class="font-semibold text-lg mb-1">Zawaj Matrimony App</h4>
+                    <p class="text-sm text-gray-600">React Native · Firebase</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">Winly Web & Mobile App</h4>
-                <p class="text-sm text-gray-600">Next.js · React Native · Tailwind CSS</p>
+
+            <!-- Winly -->
+            <!-- <div class="bg-white rounded-xl shadow overflow-hidden">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Winly"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4">
+                    <h4 class="font-semibold text-lg mb-1">Winly Web & Mobile App</h4>
+                    <p class="text-sm text-gray-600">Next.js · React Native · Tailwind CSS</p>
+                </div>
+            </div> -->
+
+            <!-- Detox -->
+            <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                        alt="Digital Detox" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">Digital Detox Android App</h4>
+                    <p class="text-sm text-gray-600 mb-3">Kotlin · SQLite</p>
+                    <a href="https://github.com/zeon-X/Digital-Detox-Challenge" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        View on GitHub
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Budgetex -->
+            <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Budgetex"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">Pocket Money Manager</h4>
+                    <p class="text-sm text-gray-600 mb-3">Kotlin · SQLite</p>
+                    <a href="https://github.com/zeon-X/Pocket-Money-Manager-Android-App" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        View on GitHub
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Bus Ticket -->
+            <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Bus Ticket"
+                        class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">Bus E-Ticketing System</h4>
+                    <p class="text-sm text-gray-600 mb-3">React · TypeScript</p>
+                    <a href="https://bus-e-tickting-by-aleeha-tech.netlify.app/" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        Visit Project
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Garments Portal -->
+            <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+                <div class="w-full h-[180px]">
+                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                        alt="Garments Portal" class="w-full h-full object-cover" />
+                </div>
+                <div class="p-4 flex-grow flex flex-col">
+                    <h4 class="font-semibold text-lg mb-1">Portal Dashboard Development</h4>
+                    <p class="text-sm text-gray-600 mb-3">React · Admin UI · Tailwind</p>
+                    <a href="https://garments-admin-panel-by-aleehatech.netlify.app/" target="_blank"
+                        class="self-start inline-block border border-indigo-600 text-indigo-600 text-sm px-5 py-2 rounded-full hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition">
+                        Visit Project
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- ...And More -->
+            <div class="bg-white rounded-xl shadow flex items-center justify-center text-center px-6 py-10">
+                <p class="text-lg font-medium text-gray-700">...and more client solutions and in-progress platforms.</p>
             </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">Digital Detox Android App</h4>
-                <p class="text-sm text-gray-600">Kotlin · SQLite</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">Budgetex App</h4>
-                <p class="text-sm text-gray-600">Kotlin · SQLite</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">Bus E-Ticketing System</h4>
-                <p class="text-sm text-gray-600">React · TypeScript</p>
-            </div>
-            <div class="bg-white p-4 rounded shadow">
-                <h4 class="font-semibold">Multi-Vendor Food Delivery App</h4>
-                <p class="text-sm text-gray-600">React Native · React.js</p>
-            </div>
+
         </div>
     </section>
 
+
+
+
     <!-- Research -->
-    <section id="research" class="py-16 px-6 md:px-20">
+    <section id="research" class="bg-gray-50 py-16 px-6 md:px-20">
         <h2 class="text-2xl font-bold mb-6 text-center">Research</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white p-4 rounded shadow">
@@ -182,7 +572,7 @@
     </section>
 
     <!-- Education -->
-    <section id="education" class="bg-gray-50 py-16 px-6 md:px-20">
+    <section id="education" class=" py-16 px-6 md:px-20">
         <h2 class="text-2xl font-bold mb-6 text-center">Education</h2>
         <div class="space-y-10">
             <div class="text-center">
@@ -215,7 +605,7 @@
     </section>
 
     <!-- Certificates -->
-    <section id="certificates" class="py-16 px-6 md:px-20">
+    <section id="certificates" class="bg-gray-50 py-16 px-6 md:px-20">
         <h2 class="text-2xl font-bold mb-6 text-center">Certificates</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white p-4 rounded shadow text-center">
@@ -248,21 +638,157 @@
 
 
     <!-- Contact -->
-    <section id="contact" class="bg-indigo-50 py-16 text-center">
-        <h2 class="text-2xl font-bold mb-4">Let’s Work Together</h2>
-        <p class="mb-2 text-gray-700">Email: <a href="mailto:mdshefatzeon@gmail.com"
-                class="text-indigo-600">mdshefatzeon@gmail.com</a></p>
-        <p class="mb-2">Website: <a href="https://gozeonx.com" class="text-indigo-600" target="_blank">gozeonx.com</a>
-        </p>
-        <p class="mb-2">LinkedIn: <a href="https://linkedin.com/in/mdshefatzeon" class="text-indigo-600"
-                target="_blank">mdshefatzeon</a></p>
-        <p>GitHub: <a href="https://github.com/zeon-X" class="text-indigo-600" target="_blank">zeon-X</a></p>
+    <section id="contact" class="bg-indigo-50 py-20 px-6 md:px-20">
+        <h2 class="text-3xl font-bold mb-12 text-center text-indigo-800">Let’s Work Together</h2>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+            <!-- Contact Info + Resume CTA -->
+            <div class="text-center md:text-left">
+                <p class="text-gray-700 text-base text-sm leading-relaxed mb-6">
+                    I’ve worked with 7+ startups and companies around the world — delivering scalable platforms, mobile
+                    apps, and powerful brand experiences. Whether you need a full-stack developer, a complete digital
+                    team, or a creative collaborator, I’m ready to bring your vision to life with quality, speed, and
+                    care.
+                </p>
+                <p class="text-gray-700 text-base text-sm leading-relaxed mb-6">
+                    Let’s build something meaningful together. Reach out today — I’d love to hear about your project!
+                </p>
+
+                <div class="space-y-3 text-sm">
+                    <p class="text-gray-700">📧 Email:
+                        <a href="mailto:mdshefatzeon@gmail.com"
+                            class="text-indigo-600 hover:underline">mdshefatzeon@gmail.com</a>
+                    </p>
+                    <p class="text-gray-700">🌐 Website:
+                        <a href="https://gozeonx.com" class="text-indigo-600 hover:underline"
+                            target="_blank">gozeonx.com</a>
+                    </p>
+                    <p class="text-gray-700">💼 LinkedIn:
+                        <a href="https://linkedin.com/in/mdshefatzeon" class="text-indigo-600 hover:underline"
+                            target="_blank">mdshefatzeon</a>
+                    </p>
+                    <p class="text-gray-700">🐙 GitHub:
+                        <a href="https://github.com/zeon-X" class="text-indigo-600 hover:underline"
+                            target="_blank">zeon-X</a>
+                    </p>
+                </div>
+
+                <div class="mt-8">
+                    <a href="/path-to-your-resume.pdf" download
+                        class="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-600 hover:to-indigo-600 transition">
+                        📄 Download My Resume
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Contact Form -->
+            <form class="bg-white shadow-md rounded-xl p-6 space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" placeholder="Your Name"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" placeholder="your@email.com"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Hiring For</label>
+                    <select
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="">Select a Service</option>
+                        <option>Full Stack Development</option>
+                        <option>Web Development</option>
+                        <option>App (Cross-platform)</option>
+                        <option>Android (Native)</option>
+                        <option>Backend & API</option>
+                        <option>DevOps & Maintenance</option>
+                        <option>Graphics Design</option>
+                        <option>Branding & Identity</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea rows="4" placeholder="Tell me about your project..."
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                </div>
+
+                <div class="text-center md:text-left">
+                    <button type="submit"
+                        class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium px-6 py-2 rounded-full shadow hover:from-purple-600 hover:to-indigo-600 transition">
+                        ✉️ Submit Inquiry
+                    </button>
+                </div>
+            </form>
+
+        </div>
     </section>
 
+
+
     <!-- Footer -->
-    <footer class="text-center text-sm py-6 border-t mt-10">
-        © 2025 GOZEONX · Built by Md. Shefat Zeon
+    <footer class="bg-white border-t mt-0 pt-24">
+        <div class="max-w-7xl mx-auto px-6 md:px-20 grid md:grid-cols-3 gap-8 text-center md:text-left pb-10">
+
+            <!-- Logo & Tagline -->
+            <div class="flex flex-col items-center md:items-start">
+                <h1 class="text-xl font-bold text-indigo-600 mb-2">gozeonx</h1>
+                <p class="text-gray-600 text-sm">Software. Solutions. Scale.</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div>
+                <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Explore</h4>
+                <ul class="space-y-1 text-sm text-gray-600">
+                    <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
+                    <li><a href="#services" class="hover:text-indigo-600">Services</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+                <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Connect</h4>
+                <ul class="space-y-1 text-sm text-gray-600">
+                    <li><a href="mailto:mdshefatzeon@gmail.com" class="hover:text-indigo-600">Email</a></li>
+                    <li><a href="https://linkedin.com/in/mdshefatzeon" target="_blank"
+                            class="hover:text-indigo-600">LinkedIn</a></li>
+                    <li><a href="https://github.com/zeon-X" target="_blank" class="hover:text-indigo-600">GitHub</a>
+                    </li>
+                    <li><a href="https://gozeonx.com" target="_blank" class="hover:text-indigo-600">Website</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm text-center py-4">
+            © 2025 GOZEONX · Built with ❤️ by Md. Shefat Zeon
+        </div>
     </footer>
+
+
+
+    <!-- JS for Toggle -->
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let isOpen = false;
+
+        navToggle.addEventListener('click', () => {
+            isOpen = !isOpen;
+            mobileMenu.style.maxHeight = isOpen ? mobileMenu.scrollHeight + "px" : "0px";
+        });
+    </script>
+
 
 </body>
 
