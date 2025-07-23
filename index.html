@@ -5,6 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gozeonx | Software. Solutions. Scale.</title>
+    <meta name="description"
+        content="gozeonx is a startup-friendly software engineering agency based in Bangladesh, specializing in full-stack web and app development, backend systems, and scalable tech solutions. Led by a problem-solving mindset and 7+ successful startup partnerships.">
+    <meta name="keywords"
+        content="software agency in Bangladesh, startup software development, full-stack engineer, React developer, SaaS platforms, problem-solving developer, MERN stack, gozeonx, Md Shefat Zeon">
+    <meta name="author" content="Md. Shefat Zeon">
+    <link rel="canonical" href="https://gozeonx.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="gozeonx | Software. Solutions. Scale.">
+    <meta property="og:description"
+        content="Startup-focused full-stack development agency in Bangladesh. Build smarter with gozeonx.">
+    <meta property="og:image" content="https://gozeonx.com/your-preview-image.jpg">
+    <meta property="og:url" content="https://gozeonx.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -17,20 +33,30 @@
             }
         }
     </script>
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
     </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
 </head>
+
 
 <body class="bg-white text-gray-900">
 
     <!-- Navbar -->
     <header class="sticky top-0 bg-white z-50 shadow-md">
         <div class="flex justify-between items-center px-6 py-4">
-            <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
+            <a href="#home" class="flex items-center gap-2">
+                <img src="/assets//favicon.png" alt="gozeonx logo" class="h-10 object-contain" />
+                <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
+            </a>
+
 
             <!-- Hamburger Button -->
             <button id="navToggle" class="md:hidden text-indigo-600 text-2xl focus:outline-none">
@@ -44,6 +70,9 @@
                 <a href="#skills" class="hover:text-indigo-600">Skills</a>
                 <a href="#experience" class="hover:text-indigo-600">Experience</a>
                 <a href="#projects" class="hover:text-indigo-600">Projects</a>
+                <a href="#research" class="hover:text-indigo-600">Research</a>
+                <a href="#education" class="hover:text-indigo-600">Education</a>
+                <a href="#certificates" class="hover:text-indigo-600">certificates</a>
                 <a href="#contact" class="hover:text-indigo-600">Contact</a>
             </nav>
         </div>
@@ -56,6 +85,9 @@
             <a href="#skills" class="block hover:text-indigo-600">Skills</a>
             <a href="#experience" class="block hover:text-indigo-600">Experience</a>
             <a href="#projects" class="block hover:text-indigo-600">Projects</a>
+            <a href="#research" class="hover:text-indigo-600">Research</a>
+            <a href="#education" class="hover:text-indigo-600">Education</a>
+            <a href="#certificates" class="hover:text-indigo-600">certificates</a>
             <a href="#contact" class="block pb-4 hover:text-indigo-600">Contact</a>
         </nav>
     </header>
@@ -64,6 +96,7 @@
     <!-- Hero Section -->
     <section id="home"
         class="text-center min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-indigo-100 to-purple-100">
+
         <h2 class="text-5xl font-bold mb-4">Md. Shefat Zeon</h2>
         <p class="text-xl text-gray-700 mb-6">Software Engineer | Full Stack Developer | MERN Expert</p>
         <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700">View
@@ -81,7 +114,7 @@
                 <!-- <img src="https://i.ibb.co/nMCwsr3x/IMG-4741.png" alt="Md. Shefat Zeon"
                     class="rounded-2xl shadow-md w-full max-h-[420px] grayscale object-cover object-top"> -->
                 <img src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
-                    class="rounded-2xl shadow-md w-full max-h-[480px] grayscale object-cover object-center">
+                    class="rounded-2xl shadow-md w-full max-h-[480px]  object-cover object-center">
                 <!-- <img src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
                     class="rounded-2xl shadow-md w-full max-w-sm max-h-[420px] grayscale object-cover"> -->
             </div>
@@ -175,123 +208,124 @@
 
         <div class="flex flex-wrap justify-center gap-6">
 
+            <!-- h-15 mb-2 grayscale hover:grayscale-0 -->
             <!-- JavaScript -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">JavaScript</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">JavaScript</span>
             </div>
 
             <!-- Python -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Python</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Python</span>
             </div>
 
             <!-- C -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">C/C++</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">C/C++</span>
             </div>
 
 
             <!-- Java -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Java</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Java</span>
             </div>
 
 
 
             <!-- React -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">React / React Native</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">React / React Native</span>
             </div>
 
             <!-- Next.js -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Next.js" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Next.js</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Next.js" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Next.js</span>
             </div>
 
             <!-- Redux -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="Redux" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Redux Toolkit</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="Redux" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Redux Toolkit</span>
             </div>
 
             <!-- Node.js -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Node.js</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Node.js</span>
             </div>
             <!-- Express.js -->
             <div class="flex flex-col items-center w-28">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                    alt="Express.js" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Express.js</span>
+                    alt="Express.js" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Express.js</span>
             </div>
 
 
             <!-- Django -->
             <div class="flex flex-col items-center w-28">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"
-                    class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Django</span>
+                    class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Django</span>
             </div>
 
 
             <!-- MongoDB -->
             <div class="flex flex-col items-center w-28">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
-                    class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">MongoDB</span>
+                    class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">MongoDB</span>
             </div>
 
 
             <!-- PostgreSQL -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">PostgreSQL</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">PostgreSQL</span>
             </div>
 
             <!-- Firebase -->
             <div class="flex flex-col items-center w-28">
                 <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"
-                    class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Firebase</span>
+                    class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Firebase</span>
             </div>
 
             <!-- AWS -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="AWS" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">AWS</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="AWS" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">AWS</span>
             </div>
 
             <!-- Tailwind CSS -->
             <div class="flex flex-col items-center w-28">
                 <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind"
-                    class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Tailwind CSS</span>
+                    class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Tailwind CSS</span>
             </div>
             <!-- Figma -->
             <div class="flex flex-col items-center w-28">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
-                    class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Figma</span>
+                    class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Figma</span>
             </div>
 
 
             <!-- Git -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Git</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Git</span>
             </div>
 
             <!-- Agile -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/4222/4222781.png" alt="Agile" class="h-14 mb-2">
-                <span class="text-sm font-medium text-center">Agile / Scrum</span>
+                <img src="https://cdn-icons-png.flaticon.com/512/4222/4222781.png" alt="Agile" class="h-15 mb-2">
+                <span class="text-sm font-medium text-center text-indigo-800">Agile / Scrum</span>
             </div>
 
         </div>
@@ -735,7 +769,7 @@
 
     <!-- Footer -->
     <footer class="bg-white border-t mt-0 pt-24">
-        <div class="max-w-7xl mx-auto px-6 md:px-20 grid md:grid-cols-3 gap-8 text-center md:text-left pb-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-20 grid md:grid-cols-2 gap-8 text-center md:text-left pb-10">
 
             <!-- Logo & Tagline -->
             <div class="flex flex-col items-center md:items-start">
@@ -743,30 +777,34 @@
                 <p class="text-gray-600 text-sm">Software. Solutions. Scale.</p>
             </div>
 
-            <!-- Navigation Links -->
-            <div>
-                <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Explore</h4>
-                <ul class="space-y-1 text-sm text-gray-600">
-                    <li><a href="#about" class="hover:text-indigo-600">About</a></li>
-                    <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
-                    <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
-                    <li><a href="#services" class="hover:text-indigo-600">Services</a></li>
-                    <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
-                </ul>
+            <div class="w-full grid md:grid-cols-2">
+                <!-- Navigation Links -->
+                <div>
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Explore</h4>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+                        <li><a href="#skills" class="hover:text-indigo-600">Skills</a></li>
+                        <li><a href="#projects" class="hover:text-indigo-600">Projects</a></li>
+                        <li><a href="#services" class="hover:text-indigo-600">Services</a></li>
+                        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Connect</h4>
+                    <ul class="space-y-1 text-sm text-gray-600">
+                        <li><a href="mailto:mdshefatzeon@gmail.com" class="hover:text-indigo-600">Email</a></li>
+                        <li><a href="https://linkedin.com/in/mdshefatzeon" target="_blank"
+                                class="hover:text-indigo-600">LinkedIn</a></li>
+                        <li><a href="https://github.com/zeon-X" target="_blank" class="hover:text-indigo-600">GitHub</a>
+                        </li>
+                        <li><a href="https://gozeonx.com" target="_blank" class="hover:text-indigo-600">Website</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Social Links -->
-            <div>
-                <h4 class="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Connect</h4>
-                <ul class="space-y-1 text-sm text-gray-600">
-                    <li><a href="mailto:mdshefatzeon@gmail.com" class="hover:text-indigo-600">Email</a></li>
-                    <li><a href="https://linkedin.com/in/mdshefatzeon" target="_blank"
-                            class="hover:text-indigo-600">LinkedIn</a></li>
-                    <li><a href="https://github.com/zeon-X" target="_blank" class="hover:text-indigo-600">GitHub</a>
-                    </li>
-                    <li><a href="https://gozeonx.com" target="_blank" class="hover:text-indigo-600">Website</a></li>
-                </ul>
-            </div>
+
         </div>
 
         <!-- Bottom bar -->
