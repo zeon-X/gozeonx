@@ -46,6 +46,44 @@
             }
         }
     </script>
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marqueeLoop {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee {
+            width: 200%;
+            animation: marqueeLoop 40s linear infinite;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 3rem;
+        }
+    </style>
+
+
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -97,9 +135,9 @@
 
     <!-- Navbar -->
     <header class="sticky top-0 bg-white z-50 shadow-md">
-        <div class="flex justify-between items-center px-6 py-4">
+        <div class="flex justify-between items-center px-6 py-4   max-w-6xll mmx-auto">
             <a href="#home" class="flex items-center gap-2">
-                <img loading="lazy" src="./assets/favicon.png" alt="gozeonx logo" class="h-10 object-contain" />
+                <img loading="lazy" src="./assets/favicon.png" alt="gozeonx logo" class="h-6 object-contain" />
                 <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
             </a>
 
@@ -111,6 +149,7 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex space-x-4 text-sm" id="navMenu">
+                <a href="#home" class="hover:text-indigo-600">Home</a>
                 <a href="#about" class="hover:text-indigo-600">About</a>
                 <a href="#services" class="hover:text-indigo-600">Services</a>
                 <a href="#skills" class="hover:text-indigo-600">Skills</a>
@@ -131,36 +170,134 @@
             <a href="#skills" class="block hover:text-indigo-600">Skills</a>
             <a href="#experience" class="block hover:text-indigo-600">Experience</a>
             <a href="#projects" class="block hover:text-indigo-600">Projects</a>
-            <a href="#research" class="hover:text-indigo-600">Research</a>
-            <a href="#education" class="hover:text-indigo-600">Education</a>
-            <a href="#certificates" class="hover:text-indigo-600">Certificates</a>
             <a href="#contact" class="block pb-4 hover:text-indigo-600">Contact</a>
         </nav>
     </header>
 
 
+
+
+
+
     <!-- Hero Section -->
     <section id="home"
-        class="text-center min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-indigo-100 to-purple-100">
+        class="relative text-center min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-indigo-100 to-purple-100 px-4 py-10">
 
-        <h2 class="text-5xl font-bold mb-4">Md. Shefat Zeon</h2>
-        <p class="text-xl text-gray-700 mb-6">Software Engineer | Full Stack Developer | MERN Expert</p>
-        <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700">View
-            Projects</a>
+        <!-- Hero Content -->
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-indigo-800 tracking-tight leading-tight">Md. Shefat
+            Zeon</h2>
+        <p class="text-xl md:text-2xl text-gray-700 mb-6 max-w-xl mx-auto">Software Engineer · Full Stack Developer ·
+            MERN Expert</p>
+        <a href="#projects"
+            class="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition duration-300 shadow-md mb-10">
+            View Projects
+        </a>
+
+        <!-- Marquee Logos Row -->
+        <div class="w-full bg-gradient-to-r from-indigo-200/70 to-purple-200/70 py-6 overflow-hidden absolute bottom-0">
+            <div class="marquee flex items-center gap-10 px-10">
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+                <!-- repeat -->
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/B2yGkTBd/99moves.png" alt="99moves.org" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/994PGNpz/Ikiru-people.png" alt="Ikiru People"
+                    class="h-20 object-contain rounded-full">
+                <img src="https://i.ibb.co/WWV0Z1Qx/marmara.png" alt="Marmara" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/XxHkB0Nb/upvibez.png" alt="Upvibez" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/FCykwbr/Winlyblack.png" alt="Winly" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/p6WPYh1j/wristlink.png" alt="Wristlink" class="h-16 lg:h-20 object-contain">
+                <img src="https://i.ibb.co/G4GdCwGg/zawaj.png" alt="Zawaj" class="h-16 lg:h-20 object-contain">
+                <img src="https://betafore.com/wp-content/uploads/2024/07/cropped-betafore-logo-transparent.png"
+                    alt="Betafore" class="h-16 lg:h-20 object-contain">
+
+
+            </div>
+        </div>
     </section>
+
+
+
 
     <!-- About -->
     <section id="about" class="py-20 px-6 md:px-20 bg-white">
         <h2 class="text-3xl font-bold mb-12 text-center text-indigo-800">About Me</h2>
 
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12  max-w-6xl mx-auto">
 
             <!-- Image -->
             <div class="flex justify-center">
                 <!-- <img loading="lazy"  src="https://i.ibb.co/nMCwsr3x/IMG-4741.png" alt="Md. Shefat Zeon"
                     class="rounded-2xl shadow-md w-full max-h-[420px] grayscale object-cover object-top"> -->
                 <img loading="lazy" src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
-                    class="rounded-2xl shadow-md w-full max-h-[480px]  object-cover object-center">
+                    class="rounded shadow-md w-full max-h-[480px]  object-cover object-center">
                 <!-- <img loading="lazy"  src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
                     class="rounded-2xl shadow-md w-full max-w-sm max-h-[420px] grayscale object-cover"> -->
             </div>
@@ -198,10 +335,10 @@
     <section id="services" class="bg-gray-50 py-16 px-6 md:px-20">
         <h2 class="text-3xl font-bold mb-12 text-center">What I Offer</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8  max-w-6xl mx-auto">
 
             <!-- Full Stack Development -->
-            <div class="bg-white rounded-xl shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
+            <div class="bg-white rounded shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
                 <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Full Stack"
                     class="h-12 mx-auto mb-4">
                 <h3 class="text-lg font-semibold text-center mb-1">Full Stack Development</h3>
@@ -220,7 +357,7 @@
             </div>
 
             <!-- Brand Identity & Design -->
-            <div class="bg-white rounded-xl shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
+            <div class="bg-white rounded shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
                 <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Brand"
                     class="h-12 mx-auto mb-4">
                 <h3 class="text-lg font-semibold text-center mb-1">Brand Identity & Design</h3>
@@ -251,141 +388,59 @@
     <!-- Skills -->
     <section id="skills" class="bg-white py-16 px-6 md:px-20">
         <h2 class="text-3xl font-bold mb-10 text-center text-indigo-800">Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
 
-        <div class="flex flex-wrap justify-center gap-6">
-
-            <!-- h-15 mb-2 grayscale hover:grayscale-0 -->
-            <!-- JavaScript -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">JavaScript</span>
+            <!-- Cross-Platform App Development -->
+            <div class="flex flex-col items-center text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/4781/4781517.png" alt="App Development"
+                    class="h-20 mb-3">
+                <h4 class="font-semibold text-indigo-800">Cross-Platform App Development</h4>
+                <p class="text-sm text-gray-600">Using React Native and Expo to build apps for both Android and iOS with
+                    a unified codebase.</p>
             </div>
 
-            <!-- Python -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Python</span>
+            <!-- Web Development -->
+            <div class="flex flex-col items-center text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2721/2721293.png" alt="Web Development"
+                    class="h-20 mb-3">
+                <h4 class="font-semibold text-indigo-800">Web Development</h4>
+                <p class="text-sm text-gray-600">Building responsive and performant websites using React, Next.js,
+                    Tailwind CSS, and more.</p>
             </div>
 
-            <!-- C -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">C/C++</span>
+            <!-- Android Development -->
+            <div class="flex flex-col items-center text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Android Development"
+                    class="h-20 mb-3">
+                <h4 class="font-semibold text-indigo-800">Android Development</h4>
+                <p class="text-sm text-gray-600">Native Android development experience using Java and cross-platform
+                    tools.</p>
             </div>
 
-
-            <!-- Java -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Java</span>
+            <!-- Backend Development -->
+            <div class="flex flex-col items-center text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2807/2807944.png" alt="Backend Development"
+                    class="h-20 mb-3">
+                <h4 class="font-semibold text-indigo-800">Backend Development</h4>
+                <p class="text-sm text-gray-600">APIs and server logic with Node.js, Express, Django, MongoDB,
+                    PostgreSQL, and FastAPI.</p>
             </div>
 
-
-
-            <!-- React -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">React / React Native</span>
+            <!-- DevOps -->
+            <div class="flex flex-col items-center text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/3810/3810916.png" alt="DevOps" class="h-20 mb-3">
+                <h4 class="font-semibold text-indigo-800">DevOps</h4>
+                <p class="text-sm text-gray-600">Experience with CI/CD pipelines, Docker, deployment to AWS, and
+                    managing scalable systems.</p>
             </div>
 
-            <!-- Next.js -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Next.js"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Next.js</span>
-            </div>
-
-            <!-- Redux -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="Redux"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Redux Toolkit</span>
-            </div>
-
-            <!-- Node.js -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Node.js</span>
-            </div>
-            <!-- Express.js -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                    alt="Express.js" class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Express.js</span>
-            </div>
-
-
-            <!-- Django -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                    alt="Django" class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Django</span>
-            </div>
-
-
-            <!-- MongoDB -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">MongoDB</span>
-            </div>
-
-
-            <!-- PostgreSQL -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">PostgreSQL</span>
-            </div>
-
-            <!-- Firebase -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Firebase</span>
-            </div>
-
-            <!-- AWS -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS" class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">AWS</span>
-            </div>
-
-
-            <!-- Tailwind CSS -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-                    alt="Tailwind" class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Tailwind CSS</span>
-            </div>
-            <!-- Figma -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                    alt="Figma" class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Figma</span>
-            </div>
-
-
-            <!-- Git -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Git</span>
-            </div>
-
-            <!-- Agile -->
-            <div class="flex flex-col items-center w-28">
-                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/4222/4222781.png" alt="Agile"
-                    class="h-13 mb-2">
-                <span class="text-sm font-medium text-center text-indigo-800">Agile / Scrum</span>
+            <!-- Business Development -->
+            <div class="flex flex-col items-center text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/5957/5957130.png" alt="Business Development"
+                    class="h-20 mb-3">
+                <h4 class="font-semibold text-indigo-800">Business Development</h4>
+                <p class="text-sm text-gray-600">Strategizing, pitching, and converting software ideas into real-world
+                    MVPs and services.</p>
             </div>
 
         </div>
@@ -397,65 +452,69 @@
 
 
     <!-- Experience -->
-    <section id="experience" class="bg-gray-50 py-16 px-6 md:px-20">
-        <h2 class="text-3xl font-bold mb-12 text-center text-indigo-800">Experience</h2>
+    <section id="experience" class="bg-gray-50 py-16 px-6 md:px-20  ">
+        <div class=" max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-indigo-800">Experience</h2>
 
-        <div class="relative border-l-2 border-indigo-200 ml-4 md:ml-6 space-y-10">
+            <div class="relative border-l-2 border-indigo-200 ml-4 md:ml-6 space-y-10 ">
 
-            <!-- Experience Item -->
-            <div class="relative pl-6 md:pl-10">
-                <div
-                    class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
+                <!-- Experience Item -->
+                <div class="relative pl-6 md:pl-10">
+                    <div
+                        class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
+                    </div>
+                    <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-indigo-700">Software Engineer – <span
+                                class="text-gray-800">Betafore</span> <span
+                                class="text-xs bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full ml-2">Hybrid</span>
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-1">Jul 2025 – Present</p>
+                        <p class="text-sm text-gray-700 mt-3">
+                            Built a multi-role requisition platform for store teams, vendors, and admins. Used React
+                            Native
+                            (bare Expo), Redux Toolkit, Node.js, Prisma, and PostgreSQL in a scalable SaaS model.
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-                    <h3 class="text-lg font-semibold text-indigo-700">Software Engineer – <span
-                            class="text-gray-800">Betafore</span> <span
-                            class="text-xs bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full ml-2">Hybrid</span>
-                    </h3>
-                    <p class="text-sm text-gray-500 mt-1">Jul 2025 – Present</p>
-                    <p class="text-sm text-gray-700 mt-3">
-                        Built a multi-role requisition platform for store teams, vendors, and admins. Used React Native
-                        (bare Expo), Redux Toolkit, Node.js, Prisma, and PostgreSQL in a scalable SaaS model.
-                    </p>
+
+                <!-- Experience Item -->
+                <div class="relative pl-6 md:pl-10">
+                    <div
+                        class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
+                    </div>
+                    <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-indigo-700">Full Stack Developer – <span
+                                class="text-gray-800">Upvibez</span> <span
+                                class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full ml-2">Remote</span>
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-1">Jun 2024 – Apr 2025</p>
+                        <p class="text-sm text-gray-700 mt-3">
+                            Developed a music streaming app with AI recommendations and interactive playlists. Used
+                            React
+                            Native, Node.js, Python. Deployed on AWS.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Experience Item -->
+                <div class="relative pl-6 md:pl-10">
+                    <div
+                        class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
+                    </div>
+                    <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-indigo-700">Full Stack Developer – <span
+                                class="text-gray-800">99Moves</span> <span
+                                class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full ml-2">Remote</span>
+                        </h3>
+                        <p class="text-sm text-gray-500 mt-1">Jan 2024 – Jun 2024</p>
+                        <p class="text-sm text-gray-700 mt-3">
+                            Delivered a youth sports app and admin panel. Implemented school finder, admissions, and
+                            calendar features using Expo, Firebase, Maps API.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Experience Item -->
-            <div class="relative pl-6 md:pl-10">
-                <div
-                    class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-                    <h3 class="text-lg font-semibold text-indigo-700">Full Stack Developer – <span
-                            class="text-gray-800">Upvibez</span> <span
-                            class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full ml-2">Remote</span>
-                    </h3>
-                    <p class="text-sm text-gray-500 mt-1">Jun 2024 – Apr 2025</p>
-                    <p class="text-sm text-gray-700 mt-3">
-                        Developed a music streaming app with AI recommendations and interactive playlists. Used React
-                        Native, Node.js, Python. Deployed on AWS.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Experience Item -->
-            <div class="relative pl-6 md:pl-10">
-                <div
-                    class="absolute left-[-10px] top-1.5 w-5 h-5 bg-indigo-600 rounded-full border-4 border-white shadow-md">
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-                    <h3 class="text-lg font-semibold text-indigo-700">Full Stack Developer – <span
-                            class="text-gray-800">99Moves</span> <span
-                            class="text-xs bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full ml-2">Remote</span>
-                    </h3>
-                    <p class="text-sm text-gray-500 mt-1">Jan 2024 – Jun 2024</p>
-                    <p class="text-sm text-gray-700 mt-3">
-                        Delivered a youth sports app and admin panel. Implemented school finder, admissions, and
-                        calendar features using Expo, Firebase, Maps API.
-                    </p>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -463,10 +522,10 @@
     <section id="projects" class="py-16 px-6 md:px-20 ">
         <h2 class="text-2xl font-bold mb-10 text-center">Projects</h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
             <!-- UpVibez -->
-            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy" src="https://upvibez.s3.me-central-1.amazonaws.com/App_Ref.png" alt="UpVibez"
                         class="w-full h-full object-cover" />
@@ -482,7 +541,7 @@
             </div>
 
             <!-- 99Moves -->
-            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy"
                         src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=535,h=322,fit=crop,trim=0;1.1884328358208955;0;0/Yle6oEw6W0uV3nqq/screenshot-2024-09-30-at-4.43.47a-pm-Yyv3G7MnVrS3zpwK.png"
@@ -499,7 +558,7 @@
             </div>
 
             <!-- Marmara -->
-            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy" src="https://aleeha-test.s3.ap-southeast-1.amazonaws.com/mrr-1.jpeg"
                         alt="Marmara" class="w-full h-full object-cover" />
@@ -515,7 +574,7 @@
             </div>
 
             <!-- WristLink -->
-            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy" src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
                         alt="WristLink" class="w-full h-full object-cover" />
@@ -531,7 +590,7 @@
             </div>
 
             <!-- Zawaj -->
-            <div class="bg-white rounded-xl shadow overflow-hidden">
+            <div class="bg-white rounded shadow overflow-hidden">
                 <div class="w-full h-[220px]">
                     <img loading="lazy" src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
                         alt="Zawaj" class="w-full h-full object-cover" />
@@ -543,7 +602,7 @@
             </div>
 
             <!-- Winly -->
-            <div class="bg-white rounded-xl shadow overflow-hidden">
+            <div class="bg-white rounded shadow overflow-hidden">
                 <div class="w-full h-[220px]">
                     <img loading="lazy"
                         src="https://i.ibb.co/TBL37kjb/Screenshot-2025-07-23-at-15-59-15-1-Instagram.png" alt="Winly"
@@ -556,7 +615,7 @@
             </div>
 
             <!-- Detox -->
-            <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <!-- <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy"
                         src="https://private-user-images.githubusercontent.com/73699852/386454233-c99373bb-f454-4edf-8895-c42cc7053045.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTMyNjUxMDUsIm5iZiI6MTc1MzI2NDgwNSwicGF0aCI6Ii83MzY5OTg1Mi8zODY0NTQyMzMtYzk5MzczYmItZjQ1NC00ZWRmLTg4OTUtYzQyY2M3MDUzMDQ1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzIzVDEwMDAwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM1MTNlNzAyNWEzOTkyODU3MWIxYTRmYzQzMzcyNWIxNDE4ZDhhMTA1ZGRmMWE2NWFjZTc4NzBmODIzMWY1YTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.0kGZ7ko2CzNjWtua9hLSKjJmxeWJWTYIGW6_NH7J6GI"
@@ -573,7 +632,7 @@
             </div> -->
 
             <!-- Budgetex -->
-            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy"
                         src="https://user-images.githubusercontent.com/73699852/193410165-c775f462-d784-4159-8eda-270d04a95bee.png"
@@ -590,7 +649,7 @@
             </div>
 
             <!-- Bus Ticket -->
-            <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <!-- <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy"  src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Bus Ticket"
                         class="w-full h-full object-cover" />
@@ -606,7 +665,7 @@
             </div> -->
 
             <!--  Ikiru People Customer Portal -->
-            <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
+            <div class="bg-white rounded shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[220px]">
                     <img loading="lazy" src="https://i.ibb.co/ycr8wL94/Group-539.png" alt="Ikiru People Customer Portal"
                         class="w-full h-full object-cover object-center" />
@@ -623,7 +682,7 @@
             </div>
 
             <!-- ...And More -->
-            <div class="bg-white rounded-xl shadow flex items-center justify-center text-center px-6 py-10">
+            <div class="bg-white rounded shadow flex items-center justify-center text-center px-6 py-10">
                 <p class="text-lg font-medium text-gray-700">...and more client solutions and in-progress platforms.</p>
             </div>
 
@@ -636,7 +695,7 @@
     <!-- Research -->
     <section id="research" class="bg-gray-50 py-16 px-6 md:px-20">
         <h2 class="text-2xl font-bold mb-6 text-center">Research</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div class="bg-white p-4 rounded shadow">
                 <img loading="lazy"
                     src="https://i.ibb.co/1f6GZgXt/Screenshot-2025-07-23-at-03-59-38-Multimodal-Sentiment-Analysis-for-Mental-Health-Monitoring-in-Remo.png"
@@ -674,7 +733,7 @@
     <!-- Education -->
     <section id="education" class=" py-16 px-6 md:px-20">
         <h2 class="text-2xl font-bold mb-6 text-center">Education</h2>
-        <div class="space-y-10">
+        <div class="space-y-10  max-w-6xl mx-auto">
             <div class="text-center">
                 <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/en/8/87/RUET_logo.svg" alt="RUET Logo"
                     class="mx-auto mb-4 h-16">
@@ -708,7 +767,7 @@
     <!-- Certificates -->
     <section id="certificates" class="bg-gray-50 py-16 px-6 md:px-20">
         <h2 class="text-2xl font-bold mb-6 text-center">Certificates</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <div class="bg-white p-4 rounded shadow text-center">
                 <img loading="lazy"
                     src="https://media.licdn.com/dms/image/v2/D562DAQGQB4Jv_i7Z9g/profile-treasury-image-shrink_800_800/B56ZVPrdIvGUAc-/0/1740798548101?e=1753826400&v=beta&t=2FqbpLX1xymUCDQ-AQ_QE1d8bkFy4-ly2r7ykukRCVY"
@@ -736,6 +795,11 @@
                     src="https://i.ibb.co/tpqnXzDv/Screenshot-2025-07-23-at-03-42-53-Licenses-certifications-Md-Shefat-Zeon-Linked-In.png"
                     alt="Web Development Certificate" class="w-full aspect-[4/3] object-cover rounded mb-4">
                 <h4 class="font-semibold">Complete Web Development Course – 2022</h4>
+            </div>
+            <div class="bg-white p-4 rounded shadow text-center">
+                <img loading="lazy" src="https://i.ibb.co/vxZZwJrd/1710802171119.jpg" alt="Certificate of Appriciation"
+                    class="w-full aspect-[4/3] object-cover rounded mb-4">
+                <h4 class="font-semibold">Certificate of Appriciation – 2023</h4>
             </div>
         </div>
     </section>
@@ -789,23 +853,23 @@
 
 
             <!-- Contact Form -->
-            <form id="contactForm" class="bg-white shadow-md rounded-xl p-6 space-y-6" onsubmit="sendToWhatsApp(event)">
+            <form id="contactForm" class="bg-white shadow-md rounded p-6 space-y-6" onsubmit="sendToWhatsApp(event)">
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
                     <input type="text" id="name" required placeholder="Your Name"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
                     <input type="email" id="email" required placeholder="your@email.com"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                        class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Hiring For</label>
                     <select id="service" required
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        class="w-full px-4 py-2 border border-gray-300 rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         <option value="">Select a Service</option>
                         <option>Full Stack Development</option>
                         <option>Web Development</option>
@@ -822,7 +886,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
                     <textarea id="message" required rows="4" placeholder="Tell me about your project..."
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        class="w-full px-4 py-2 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
                 </div>
 
                 <div class="text-center md:text-left">
