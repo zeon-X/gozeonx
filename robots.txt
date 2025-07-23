@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /depriciated/
+Disallow: /prompt.txt
+
+Sitemap: https://gozeonx.com/sitemap.xml

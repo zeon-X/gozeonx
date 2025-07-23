@@ -19,6 +19,8 @@
     <meta property="og:image" content="https://gozeonx.com/your-preview-image.jpg">
     <meta property="og:url" content="https://gozeonx.com/">
     <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow" />
+
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,6 +35,23 @@
             }
         }
     </script>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "gozeonx",
+    "url": "https://gozeonx.com",
+    "logo": "https://gozeonx.com/assets/favicon.png",
+    "sameAs": [
+        "https://linkedin.com/in/mdshefatzeon",
+        "https://github.com/zeon-X"
+    ],
+    "description": "A startup-friendly software engineering agency in Bangladesh focused on full-stack development and scalable SaaS platforms."
+    }
+    </script>
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -53,7 +72,7 @@
     <header class="sticky top-0 bg-white z-50 shadow-md">
         <div class="flex justify-between items-center px-6 py-4">
             <a href="#home" class="flex items-center gap-2">
-                <img src="./assets/favicon.png" alt="gozeonx logo" class="h-10 object-contain" />
+                <img loading="lazy" src="./assets/favicon.png" alt="gozeonx logo" class="h-10 object-contain" />
                 <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
             </a>
 
@@ -111,11 +130,11 @@
 
             <!-- Image -->
             <div class="flex justify-center">
-                <!-- <img src="https://i.ibb.co/nMCwsr3x/IMG-4741.png" alt="Md. Shefat Zeon"
+                <!-- <img loading="lazy"  src="https://i.ibb.co/nMCwsr3x/IMG-4741.png" alt="Md. Shefat Zeon"
                     class="rounded-2xl shadow-md w-full max-h-[420px] grayscale object-cover object-top"> -->
-                <img src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
+                <img loading="lazy" src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
                     class="rounded-2xl shadow-md w-full max-h-[480px]  object-cover object-center">
-                <!-- <img src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
+                <!-- <img loading="lazy"  src="https://i.ibb.co/gZ3vpqqY/IMG-3198.jpg" alt="Md. Shefat Zeon"
                     class="rounded-2xl shadow-md w-full max-w-sm max-h-[420px] grayscale object-cover"> -->
             </div>
 
@@ -156,7 +175,7 @@
 
             <!-- Full Stack Development -->
             <div class="bg-white rounded-xl shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
-                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Full Stack"
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Full Stack"
                     class="h-12 mx-auto mb-4">
                 <h3 class="text-lg font-semibold text-center mb-1">Full Stack Development</h3>
                 <p class="text-sm text-indigo-500 text-center mb-4">(individual/with team)</p>
@@ -175,7 +194,7 @@
 
             <!-- Brand Identity & Design -->
             <div class="bg-white rounded-xl shadow-md px-8 py-20 hover:shadow-xl transition duration-300 flex flex-col">
-                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Brand"
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Brand"
                     class="h-12 mx-auto mb-4">
                 <h3 class="text-lg font-semibold text-center mb-1">Brand Identity & Design</h3>
                 <p class="text-sm text-indigo-500 text-center mb-4">(with team)</p>
@@ -211,26 +230,30 @@
             <!-- h-15 mb-2 grayscale hover:grayscale-0 -->
             <!-- JavaScript -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">JavaScript</span>
             </div>
 
             <!-- Python -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Python</span>
             </div>
 
             <!-- C -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">C/C++</span>
             </div>
 
 
             <!-- Java -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Java</span>
             </div>
 
@@ -238,30 +261,35 @@
 
             <!-- React -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">React / React Native</span>
             </div>
 
             <!-- Next.js -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Next.js" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="Next.js"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Next.js</span>
             </div>
 
             <!-- Redux -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="Redux" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="Redux"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Redux Toolkit</span>
             </div>
 
             <!-- Node.js -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968322.png" alt="Node.js"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Node.js</span>
             </div>
             <!-- Express.js -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                <img loading="lazy"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                     alt="Express.js" class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Express.js</span>
             </div>
@@ -269,15 +297,16 @@
 
             <!-- Django -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django"
-                    class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                    alt="Django" class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Django</span>
             </div>
 
 
             <!-- MongoDB -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+                <img loading="lazy"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
                     class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">MongoDB</span>
             </div>
@@ -285,46 +314,50 @@
 
             <!-- PostgreSQL -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png" alt="PostgreSQL"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">PostgreSQL</span>
             </div>
 
             <!-- Firebase -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"
+                <img loading="lazy" src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"
                     class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Firebase</span>
             </div>
 
             <!-- AWS -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="AWS" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="AWS"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">AWS</span>
             </div>
 
             <!-- Tailwind CSS -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind"
-                    class="h-15 mb-2">
+                <img loading="lazy" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                    alt="Tailwind" class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Tailwind CSS</span>
             </div>
             <!-- Figma -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
-                    class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                    alt="Figma" class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Figma</span>
             </div>
 
 
             <!-- Git -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Git</span>
             </div>
 
             <!-- Agile -->
             <div class="flex flex-col items-center w-28">
-                <img src="https://cdn-icons-png.flaticon.com/512/4222/4222781.png" alt="Agile" class="h-15 mb-2">
+                <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/4222/4222781.png" alt="Agile"
+                    class="h-15 mb-2">
                 <span class="text-sm font-medium text-center text-indigo-800">Agile / Scrum</span>
             </div>
 
@@ -408,8 +441,8 @@
             <!-- UpVibez -->
             <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="UpVibez"
-                        class="w-full h-full object-cover" />
+                    <img loading="lazy" src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                        alt="UpVibez" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
                     <h4 class="font-semibold text-lg mb-1">UpVibez DJ Platform</h4>
@@ -424,8 +457,8 @@
             <!-- 99Moves -->
             <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="99Moves"
-                        class="w-full h-full object-cover" />
+                    <img loading="lazy" src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                        alt="99Moves" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
                     <h4 class="font-semibold text-lg mb-1">99Moves Pro</h4>
@@ -440,8 +473,8 @@
             <!-- Marmara -->
             <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Marmara"
-                        class="w-full h-full object-cover" />
+                    <img loading="lazy" src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                        alt="Marmara" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
                     <h4 class="font-semibold text-lg mb-1">Marmara Gold LLC Website</h4>
@@ -456,8 +489,8 @@
             <!-- WristLink -->
             <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="WristLink"
-                        class="w-full h-full object-cover" />
+                    <img loading="lazy" src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                        alt="WristLink" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
                     <h4 class="font-semibold text-lg mb-1">WristLink Marketplace</h4>
@@ -472,8 +505,8 @@
             <!-- Zawaj -->
             <div class="bg-white rounded-xl shadow overflow-hidden">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Zawaj"
-                        class="w-full h-full object-cover" />
+                    <img loading="lazy" src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                        alt="Zawaj" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4">
                     <h4 class="font-semibold text-lg mb-1">Zawaj Matrimony App</h4>
@@ -484,7 +517,7 @@
             <!-- Winly -->
             <!-- <div class="bg-white rounded-xl shadow overflow-hidden">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Winly"
+                    <img loading="lazy"  src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Winly"
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4">
@@ -496,7 +529,7 @@
             <!-- Detox -->
             <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                    <img loading="lazy"  src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
                         alt="Digital Detox" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
@@ -512,7 +545,7 @@
             <!-- Budgetex -->
             <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Budgetex"
+                    <img loading="lazy"  src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Budgetex"
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
@@ -528,7 +561,7 @@
             <!-- Bus Ticket -->
             <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Bus Ticket"
+                    <img loading="lazy"  src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png" alt="Bus Ticket"
                         class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
@@ -544,7 +577,7 @@
             <!-- Garments Portal -->
             <!-- <div class="bg-white rounded-xl shadow overflow-hidden flex flex-col">
                 <div class="w-full h-[180px]">
-                    <img src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
+                    <img loading="lazy"  src="https://i.ibb.co/XZWTdb0x/Chat-GPT-Image-Jul-23-2025-04-34-56-AM-1.png"
                         alt="Garments Portal" class="w-full h-full object-cover" />
                 </div>
                 <div class="p-4 flex-grow flex flex-col">
@@ -573,7 +606,8 @@
         <h2 class="text-2xl font-bold mb-6 text-center">Research</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white p-4 rounded shadow">
-                <img src="https://i.ibb.co/1f6GZgXt/Screenshot-2025-07-23-at-03-59-38-Multimodal-Sentiment-Analysis-for-Mental-Health-Monitoring-in-Remo.png"
+                <img loading="lazy"
+                    src="https://i.ibb.co/1f6GZgXt/Screenshot-2025-07-23-at-03-59-38-Multimodal-Sentiment-Analysis-for-Mental-Health-Monitoring-in-Remo.png"
                     alt="Multimodal Emotion Detection" class="w-full aspect-[4/3] object-cover rounded mb-4">
                 <h4 class="font-semibold text-lg">Multimodal Emotion Detection</h4>
                 <p class="text-sm text-gray-600">
@@ -589,7 +623,7 @@
                 </p>
             </div>
             <div class="bg-white p-4 rounded shadow">
-                <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2589721721000416-gr5.jpg"
+                <img loading="lazy" src="https://ars.els-cdn.com/content/image/1-s2.0-S2589721721000416-gr5.jpg"
                     alt="Multi-Crop Disease Detection" class="w-full aspect-[4/3] object-cover rounded mb-4">
                 <h4 class="font-semibold text-lg">Multi-Crop Leaf Disease Detection</h4>
                 <p class="text-sm text-gray-600">
@@ -610,7 +644,7 @@
         <h2 class="text-2xl font-bold mb-6 text-center">Education</h2>
         <div class="space-y-10">
             <div class="text-center">
-                <img src="https://upload.wikimedia.org/wikipedia/en/8/87/RUET_logo.svg" alt="RUET Logo"
+                <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/en/8/87/RUET_logo.svg" alt="RUET Logo"
                     class="mx-auto mb-4 h-16">
                 <h3 class="text-xl font-semibold">Rajshahi University of Engineering & Technology (RUET)</h3>
                 <p class="text-gray-600">Bachelor of Science (B.Sc.) in Computer Science & Engineering (Jan 2020 – Jun
@@ -624,7 +658,8 @@
                 </p>
             </div>
             <div class="text-center">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Dhaka_College_Seal.svg/1200px-Dhaka_College_Seal.svg.png"
+                <img loading="lazy"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Dhaka_College_Seal.svg/1200px-Dhaka_College_Seal.svg.png"
                     alt="Dhaka College Logo" class="mx-auto mb-4 h-16">
                 <h3 class="text-xl font-semibold">Dhaka College, Dhaka</h3>
                 <p class="text-gray-600">Higher Secondary Certificate (HSC), Science (Jul 2017 – Apr 2019)</p>
@@ -643,26 +678,30 @@
         <h2 class="text-2xl font-bold mb-6 text-center">Certificates</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white p-4 rounded shadow text-center">
-                <img src="https://media.licdn.com/dms/image/v2/D562DAQGQB4Jv_i7Z9g/profile-treasury-image-shrink_800_800/B56ZVPrdIvGUAc-/0/1740798548101?e=1753826400&v=beta&t=2FqbpLX1xymUCDQ-AQ_QE1d8bkFy4-ly2r7ykukRCVY"
+                <img loading="lazy"
+                    src="https://media.licdn.com/dms/image/v2/D562DAQGQB4Jv_i7Z9g/profile-treasury-image-shrink_800_800/B56ZVPrdIvGUAc-/0/1740798548101?e=1753826400&v=beta&t=2FqbpLX1xymUCDQ-AQ_QE1d8bkFy4-ly2r7ykukRCVY"
                     alt="Python Certificate" class="w-full aspect-[4/3] object-cover rounded mb-4">
                 <h4 class="font-semibold">Python (Django) – 2024</h4>
                 <a href="https://training.edge.gov.bd/storage/certificate/student-training/certificate_67b2ce7db9acb7.97918684.pdf"
                     target="_blank" class="text-indigo-600 text-sm hover:underline">View Credential</a>
             </div>
             <div class="bg-white p-4 rounded shadow text-center">
-                <img src="https://ostad.sgp1.digitaloceanspaces.com/certificate-share/c17257-md.-shefat-zeon.png"
+                <img loading="lazy"
+                    src="https://ostad.sgp1.digitaloceanspaces.com/certificate-share/c17257-md.-shefat-zeon.png"
                     alt="UI/UX Certificate" class="w-full aspect-[4/3] object-cover rounded mb-4">
                 <h4 class="font-semibold">UI/UX Design Fundamentals – 2024</h4>
                 <a href="https://ostad.app/share/certificate/c17257-md.-shefat-zeon" target="_blank"
                     class="text-indigo-600 text-sm hover:underline">View Credential</a>
             </div>
             <div class="bg-white p-4 rounded shadow text-center">
-                <img src="https://media.licdn.com/dms/image/v2/D562DAQEFdcl6GdG01A/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1710801406270?e=1753826400&v=beta&t=xlUzEeiwu1irs3tok5wM0MCwDqXtmLUTl-665EPOXpc"
+                <img loading="lazy"
+                    src="https://media.licdn.com/dms/image/v2/D562DAQEFdcl6GdG01A/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1710801406270?e=1753826400&v=beta&t=xlUzEeiwu1irs3tok5wM0MCwDqXtmLUTl-665EPOXpc"
                     alt="IoT Certificate" class="w-full aspect-[4/3] object-cover rounded mb-4">
                 <h4 class="font-semibold">Fundamentals of IoT – 2023</h4>
             </div>
             <div class="bg-white p-4 rounded shadow text-center">
-                <img src="https://i.ibb.co/tpqnXzDv/Screenshot-2025-07-23-at-03-42-53-Licenses-certifications-Md-Shefat-Zeon-Linked-In.png"
+                <img loading="lazy"
+                    src="https://i.ibb.co/tpqnXzDv/Screenshot-2025-07-23-at-03-42-53-Licenses-certifications-Md-Shefat-Zeon-Linked-In.png"
                     alt="Web Development Certificate" class="w-full aspect-[4/3] object-cover rounded mb-4">
                 <h4 class="font-semibold">Complete Web Development Course – 2022</h4>
             </div>
