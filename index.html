@@ -135,20 +135,19 @@
 
     <!-- Navbar -->
     <header class="sticky top-0 bg-white z-50 shadow-md">
-        <div class="flex justify-between items-center px-6 py-4   max-w-6xll mmx-auto">
+        <div class="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
             <a href="#home" class="flex items-center gap-2">
                 <img loading="lazy" src="./assets/favicon.png" alt="gozeonx logo" class="h-6 object-contain" />
                 <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
             </a>
 
-
-            <!-- Hamburger Button -->
-            <button id="navToggle" class="md:hidden text-indigo-600 text-2xl focus:outline-none">
+            <!-- Hamburger Button - now always visible under lg -->
+            <button id="navToggle" class="lg:hidden md:block text-indigo-600 text-2xl focus:outline-none">
                 ☰
             </button>
 
             <!-- Desktop Menu -->
-            <nav class="hidden md:flex space-x-4 text-sm" id="navMenu">
+            <nav class="hidden md:hidden lg:flex space-x-4 text-sm" id="navMenu">
                 <a href="#home" class="hover:text-indigo-600">Home</a>
                 <a href="#about" class="hover:text-indigo-600">About</a>
                 <a href="#services" class="hover:text-indigo-600">Services</a>
@@ -163,17 +162,23 @@
             </nav>
         </div>
 
-        <!-- Mobile Drawer -->
+        <!-- Mobile / Tablet Drawer -->
         <nav id="mobileMenu"
-            class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6 text-sm space-y-3">
-            <a href="#about" class="block pt-3 hover:text-indigo-600">About</a>
+            class="md:block lg:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white px-6 text-sm space-y-3">
+            <a href="#home" class="block pt-3 hover:text-indigo-600">Home</a>
+            <a href="#about" class="block hover:text-indigo-600">About</a>
             <a href="#services" class="block hover:text-indigo-600">Services</a>
             <a href="#skills" class="block hover:text-indigo-600">Skills</a>
             <a href="#experience" class="block hover:text-indigo-600">Experience</a>
             <a href="#projects" class="block hover:text-indigo-600">Projects</a>
+            <a href="#research" class="block hover:text-indigo-600">Research</a>
+            <a href="#testimonials" class="block hover:text-indigo-600">Testimonials</a>
+            <a href="#education" class="block hover:text-indigo-600">Education</a>
+            <a href="#certificates" class="block hover:text-indigo-600">Certificates</a>
             <a href="#contact" class="block pb-4 hover:text-indigo-600">Contact</a>
         </nav>
     </header>
+
 
 
 
@@ -1018,6 +1023,11 @@
                     <h1 class="text-xl font-bold text-indigo-600">gozeonx</h1>
                 </a>
                 <p class="text-gray-600 text-sm">Software. Solutions. Scale.</p>
+                <p class="text-gray-600 text-sm">Crafting code with clarity and creativity.</p>
+                <p class="text-gray-600 text-sm">Empowering ideas with full-stack precision.</p>
+                <p class="text-gray-600 text-sm">Your vision, built with purpose.</p>
+                <p class="text-gray-600 text-sm">From MVP to launch — we’ve got you.</p>
+
             </div>
 
             <div class="w-full grid md:grid-cols-2">
@@ -1088,6 +1098,7 @@
             mobileMenu.style.maxHeight = isOpen ? mobileMenu.scrollHeight + "px" : "0px";
         });
     </script>
+
 
     <!-- SwiperJS CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
