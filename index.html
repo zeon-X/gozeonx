@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDJCR31EWB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EDJCR31EWB');
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gozeonx | Software. Solutions. Scale.</title>
@@ -45,12 +56,28 @@
     "url": "https://gozeonx.com",
     "logo": "https://gozeonx.com/assets/favicon.png",
     "sameAs": [
-        "https://linkedin.com/in/mdshefatzeon",
-        "https://github.com/zeon-X"
+        "https://www.linkedin.com/company/gozeonx/",
+        "https://www.facebook.com/gozeonx"
     ],
     "description": "A startup-friendly software engineering agency in Bangladesh focused on full-stack development and scalable SaaS platforms."
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md. Shefat Zeon",
+    "jobTitle": "Software Engineer",
+    "url": "https://gozeonx.com",
+    "sameAs": [
+        "https://linkedin.com/in/mdshefatzeon",
+        "https://github.com/zeon-X",
+        "https://www.facebook.com/mdshefatzeon"
+    ]
+    }
+    </script>
+
 
 
     <!-- Fonts -->
@@ -757,22 +784,22 @@
 
 
             <!-- Contact Form -->
-            <form class="bg-white shadow-md rounded-xl p-6 space-y-6">
+            <form id="contactForm" class="bg-white shadow-md rounded-xl p-6 space-y-6" onsubmit="sendToWhatsApp(event)">
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                    <input type="text" placeholder="Your Name"
+                    <input type="text" id="name" required placeholder="Your Name"
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input type="email" placeholder="your@email.com"
+                    <input type="email" id="email" required placeholder="your@email.com"
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Hiring For</label>
-                    <select
+                    <select id="service" required
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         <option value="">Select a Service</option>
                         <option>Full Stack Development</option>
@@ -789,7 +816,7 @@
 
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                    <textarea rows="4" placeholder="Tell me about your project..."
+                    <textarea id="message" required rows="4" placeholder="Tell me about your project..."
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
                 </div>
 
@@ -800,6 +827,7 @@
                     </button>
                 </div>
             </form>
+
 
         </div>
     </section>
@@ -852,6 +880,17 @@
         </div>
     </footer>
 
+    <!-- WhatsApp Floating Button (Flaticon Icon) -->
+    <a href="https://wa.me/8801402199906?text=Hi%20Zeon!%20I%20visited%20gozeonx.com%20and%20I%27m%20interested%20in%20your%20development%20services.%20Can%20we%20talk%3F"
+        class="fixed bottom-6 right-6 hover:bg-indigo-600 rounded-full p-3 z-50 shadow-lg transition-transform transform hover:scale-105"
+        target="_blank" aria-label="Chat on WhatsApp">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-12 h-12" />
+
+    </a>
+
+
+
 
 
     <!-- JS for Toggle -->
@@ -865,6 +904,26 @@
             mobileMenu.style.maxHeight = isOpen ? mobileMenu.scrollHeight + "px" : "0px";
         });
     </script>
+
+    <!-- contact form -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const service = document.getElementById("service").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const fullMessage = `Hi Zeon! 👋\n\nI'm ${name} (${email}).\nI'm interested in: ${service}.\n\nMessage:\n${message}`;
+
+            const encodedMessage = encodeURIComponent(fullMessage);
+            const whatsappURL = `https://wa.me/8801402199906?text=${encodedMessage}`;
+
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+
 
 
 </body>
