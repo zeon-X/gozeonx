@@ -1,3 +1,14 @@
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Use index.html as the default page
+DirectoryIndex index.html
+
+# Enable basic rewrite engine (optional if you don't need clean URLs)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # If needed, you can add custom rules here
+</IfModule>
+
+# Optional: Deny access to .htaccess itself
+<Files .htaccess>
+  Order Allow,Deny
+  Deny from all
+</Files>
